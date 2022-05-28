@@ -23,6 +23,10 @@ dependencies {
 	implementation("org.springframework.kafka:spring-kafka")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.springframework.kafka:spring-kafka-test")
+
+	// https://mvnrepository.com/artifact/org.testcontainers/kafka
+	testImplementation("org.testcontainers:kafka:1.17.2")
+
 }
 
 tasks.withType<KotlinCompile> {
