@@ -52,7 +52,7 @@ class KafkaConsumerConfig {
                 ErrorHandlingDeserializer(StringDeserializer()),
                 ErrorHandlingDeserializer(deserializer)
             )
-            containerProperties.ackMode = ContainerProperties.AckMode.MANUAL
+            containerProperties.ackMode = ContainerProperties.AckMode.MANUAL_IMMEDIATE
         }
     }
 }
